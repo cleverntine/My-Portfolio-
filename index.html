@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">MyPortfolio</h2>
+
+            <button id="menuBtn">☰</button>
+
+            <ul id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <p class="welcome">WELCOME TO MY PORTFOLIO</p>
+            <h1>Hello, I'm <span>Your Name</span></h1>
+            <h2>IT Student & Web Developer</h2>
+            <p>
+                I am passionate about technology, programming,
+                and creating useful digital solutions.
+            </p>
+
+            <a href="#projects" class="btn">View My Work</a>
+            <a href="#contact" class="btn outline">Contact Me</a>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <div class="about-card">
+            <p>
+                I am an Information Technology student interested
+                in web development, software development, and
+                computer networking.
+            </p>
+            <p>
+                I enjoy learning new technologies and building
+                projects that solve real-world problems.
+                My goal is to become a skilled IT professional.
+            </p>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <h2>My Skills</h2>
+
+        <div class="skills-container">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">C Programming</div>
+            <div class="skill">Networking</div>
+            <div class="skill">Problem Solving</div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>My Projects</h2>
+
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>Number System Converter</h3>
+                <p>
+                    A mobile-friendly application that converts
+                    binary, decimal, octal, and hexadecimal numbers.
+                </p>
+                <span>HTML • CSS • JavaScript</span>
+            </div>
+
+            <div class="project-card">
+                <h3>Student Portfolio</h3>
+                <p>
+                    A personal website showcasing my skills,
+                    projects, and contact information.
+                </p>
+                <span>HTML • CSS • JavaScript</span>
+            </div>
+
+            <div class="project-card">
+                <h3>Coming Soon</h3>
+                <p>
+                    More exciting projects will be added as
+                    I continue learning and developing.
+                </p>
+                <span>In Progress</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+
+        <div class="contact-card">
+            <p>Have a project or opportunity? Let's connect!</p>
+
+            <form id="contactForm">
+                <input type="text" id="name"
+                    placeholder="Your Name" required>
+
+                <input type="email" id="email"
+                    placeholder="Your Email" required>
+
+                <textarea id="message"
+                    placeholder="Your Message" required></textarea>
+
+                <button type="submit" class="btn">
+                    Send Message
+                </button>
+            </form>
+
+            <p id="formMessage"></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© <span id="year"></span> Your Name.
+            All Rights Reserved.</p>
+        <p>Designed with </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

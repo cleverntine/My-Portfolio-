@@ -1,0 +1,266 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #09090b;
+    color: #d4d4d8;
+    line-height: 1.6;
+}
+
+header {
+    background: #18181b;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    max-width: 1100px;
+    margin: auto;
+    padding: 18px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #10b981;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.navbar a {
+    color: #d4d4d8;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #10b981;
+}
+
+#menuBtn {
+    display: none;
+    background: none;
+    color: white;
+    border: none;
+    font-size: 25px;
+}
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+    background: radial-gradient(
+        circle at top,
+        #12352c,
+        #09090b 60%
+    );
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.welcome {
+    color: #10b981;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.hero h1 span {
+    color: #10b981;
+}
+
+.hero h2 {
+    color: #a1a1aa;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 22px;
+    background: #10b981;
+    color: #09090b;
+    text-decoration: none;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.btn:hover {
+    background: #059669;
+}
+
+.outline {
+    background: transparent;
+    border: 1px solid #10b981;
+    color: #10b981;
+}
+
+.section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 70px 20px;
+}
+
+.section h2 {
+    text-align: center;
+    color: #10b981;
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+
+.about-card,
+.contact-card {
+    background: #18181b;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #27272a;
+}
+
+.about-card p {
+    margin-bottom: 15px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skill {
+    background: #18181b;
+    border: 1px solid #10b981;
+    color: #10b981;
+    padding: 15px 25px;
+    border-radius: 8px;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.project-card {
+    background: #18181b;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #27272a;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: #10b981;
+}
+
+.project-card h3 {
+    color: #10b981;
+    margin-bottom: 15px;
+}
+
+.project-card span {
+    display: block;
+    margin-top: 15px;
+    color: #a1a1aa;
+    font-size: 13px;
+}
+
+.contact-card {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+input, textarea {
+    padding: 14px;
+    background: #09090b;
+    border: 1px solid #3f3f46;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+}
+
+textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+footer {
+    background: #18181b;
+    text-align: center;
+    padding: 25px;
+    color: #a1a1aa;
+}
+
+#formMessage {
+    color: #10b981;
+    margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 65px;
+        left: 0;
+        width: 100%;
+        background: #18181b;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .navbar ul.show {
+        display: flex;
+    }
+
+    #menuBtn {
+        display: block;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 50px 18px;
+    }
+}
